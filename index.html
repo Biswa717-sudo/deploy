@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Engineering Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .gradient-bg { background: linear-gradient(135deg, #1a365d 0%, #2d3748 100%); }
+    </style>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+    <header class="h-screen flex flex-col items-center justify-center gradient-bg text-center px-4">
+        <h1 class="text-5xl md:text-7xl font-bold mb-4 animate-bounce">Hello, I'm Biswapriya</h1>
+        <p class="text-xl md:text-2xl text-gray-300 max-w-2xl">
+            Mechatronics Engineering Student @ Thapar University | Maglev Enthusiast | C Programmer
+        </p>
+        <button onclick="showAlert()" class="mt-8 px-8 py-3 bg-blue-500 hover:bg-blue-600 rounded-full font-bold transition-all">
+            Click for a Surprise
+        </button>
+    </header>
+
+    <section class="py-20 px-10">
+        <h2 class="text-3xl font-bold text-center mb-12">Current Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            
+            <div class="bg-gray-800 p-6 rounded-lg border border-gray-700 hover:border-blue-500 transition">
+                <h3 class="text-xl font-bold text-blue-400">Maglev Pod Design</h3>
+                <p class="mt-2 text-gray-400">Designing a 25kg pod with hybrid levitation and Halbach arrays for lateral guidance.</p>
+            </div>
+
+            <div class="bg-gray-800 p-6 rounded-lg border border-gray-700 hover:border-blue-500 transition">
+                <h3 class="text-xl font-bold text-blue-400">3D Ultrasonic Scanner</h3>
+                <p class="mt-2 text-gray-400">Arduino-based mapping system using stepper motors and HC-SR04 sensors.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        function showAlert() {
+            alert("This site was deployed using Git and Vercel! 🚀");
+        }
+    </script>
+</body>
+</html>
